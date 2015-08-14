@@ -1,12 +1,12 @@
 {
   "minimum-stability":"dev",
   "require": {
-    "rlerdorf/phan": "*"
+    "rlerdorf/phan": "dev-madmuffin1-fix-ast"
   },
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/rlerdorf/phan.git"
+      "url": "https://github.com/madmuffin1/phan.git"
     }
   ]
 }

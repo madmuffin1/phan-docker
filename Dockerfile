@@ -9,6 +9,4 @@ RUN git clone https://github.com/nikic/php-ast.git && \
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 ADD composer.json /usr/local/composer/
-RUN echo extension=ast.so >> /usr/local/php70/php.ini 
-
-#&& composer global install
+RUN echo extension=ast.so >> /usr/local/php70/php.ini && composer global install
