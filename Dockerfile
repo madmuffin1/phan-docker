@@ -10,3 +10,6 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 
 ADD composer.json /usr/local/composer/
 RUN echo extension=ast.so >> /usr/local/php70/php.ini && composer global install
+
+VOLUME ["/data"]
+CMD /usr/local/composer/vendor/rlerdorf/phan/phan $(find /data/ -iname \*.php | xargs echo) 
