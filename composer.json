@@ -1,0 +1,12 @@
+{
+  "minimum-stability":"dev",
+  "require": {
+    "rlerdorf/phan": "*"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/rlerdorf/phan.git"
+    }
+  ]
+}
